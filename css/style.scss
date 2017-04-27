@@ -50,10 +50,7 @@ p {
     letter-spacing: 2px;
 }
 
-.active {
-    color: black;
-    font-weight: 400;
-}
+
 
 #logo-top {
     img {
@@ -68,8 +65,19 @@ p {
         padding: 2% 0 4%;
         text-align: center;
 
+        .active {
+
+            color: black;
+            font-weight: 400;
+
+        }
+
         a {
             color: $gray;
+        }
+
+        a:hover {
+            color: $red;
         }
 
         ul {

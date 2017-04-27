@@ -37,10 +37,6 @@ a:hover {
 p {
   letter-spacing: 2px; }
 
-.active {
-  color: black;
-  font-weight: 400; }
-
 #logo-top img {
   width: 60px; }
 
@@ -49,8 +45,13 @@ p {
   margin: 0;
   padding: 2% 0 4%;
   text-align: center; }
+  #nav .nav .active {
+    color: black;
+    font-weight: 400; }
   #nav .nav a {
     color: #777; }
+  #nav .nav a:hover {
+    color: #ee6e73; }
   #nav .nav ul {
     padding: 0; }
   #nav .nav li {
