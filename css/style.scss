@@ -11,8 +11,9 @@ body {
     font-weight: 300;
     font-size: 12px;
     letter-spacing: 5px;
-    margin: 3% 25%;
+    margin: 3%;
     text-align: center;
+    overflow-y: hidden;
 }
 
 h1 {
@@ -38,7 +39,6 @@ h2 {
 a {
     color: black;
     display: inline-block;
-    padding: 0 20px;
     text-decoration: none;
 }
 
@@ -48,9 +48,14 @@ a:hover {
 
 p {
     letter-spacing: 2px;
+    font-size: 14px;
 }
 
-
+.main-div {
+    width: 70%;
+    margin: auto;
+    min-width: 450px;
+}
 
 #logo-top {
     img {
@@ -66,14 +71,13 @@ p {
         text-align: center;
 
         .active {
-
             color: black;
             font-weight: 400;
-
         }
 
         a {
             color: $gray;
+            margin: 0 2%;
         }
 
         a:hover {
@@ -113,6 +117,12 @@ p {
         }
     }
 }
+@media only screen and (max-width: 700px) {
+    #projects {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 #school {
     .banner {
@@ -121,6 +131,10 @@ p {
             margin-bottom: 50px;
             border-radius: 15px;
         }
+    }
+
+    h1 {
+        padding-bottom: 50px;
     }
 
     #school-awards {
@@ -142,6 +156,16 @@ p {
             }
         }
     }
+    @media only screen and (max-width: 700px) {
+        #school-awards {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .award-date-text {
+            padding-bottom: 20px;
+        }
+    }
 }
 
 #about {
@@ -154,7 +178,7 @@ p {
     }
 
     h1 {
-        padding-bottom: 20px;
+        padding-bottom: 40px;
     }
 
     a {
@@ -167,6 +191,7 @@ p {
     img {
         width: 20px;
         vertical-align: -2px;
+        padding-right: 10px;
     }
 
     p {
