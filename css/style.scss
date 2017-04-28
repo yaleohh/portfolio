@@ -4,12 +4,15 @@
 $main-font: "Open Sans", Helvetica, sans-serif;
 $gray: #777;
 $red: #ee6e73;
+$small-font:12px;
+$medium-font:15px;
+$large-font:25px;
 
 body {
     font-family: $main-font;
     color: black;
     font-weight: 300;
-    font-size: 12px;
+    font-size: $small-font;
     letter-spacing: 5px;
     margin: 75px 0;
     text-align: center;
@@ -19,7 +22,7 @@ body {
 
 h1 {
     font-family: $main-font;
-    font-size: 25px;
+    font-size: $large-font;
     letter-spacing: 8px;
     font-weight: 300;
     color: black;
@@ -29,7 +32,7 @@ h1 {
 
 h2 {
     font-family: $main-font;
-    font-size: 14px;
+    font-size: $medium-font;
     letter-spacing: 5px;
     font-weight: 300;
     color: black;
@@ -49,7 +52,7 @@ a:hover {
 
 p {
     letter-spacing: 2px;
-    font-size: 14px;
+    font-size: $medium-font;
 }
 
 .main-div {
@@ -115,13 +118,40 @@ p {
         flex-direction: column;
         align-items: center;
 
+        .img-container {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .img-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: none;
+            color: black;
+            text-transform: uppercase;
+            font-size: $medium-font;
+            font-weight: 300;
+        }
+
+        .img-container:hover .img-overlay {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, .9);
+        }
+
         img {
             width: 200px;
-            margin-bottom: 27px;
+            margin-bottom: 0;
             border-radius: 10px;
+            vertical-align: bottom;
         }
 
         a {
+            display: flex;
             padding: 0;
         }
     }
@@ -134,19 +164,20 @@ p {
 }
 
 #school {
-    .main-div {
-        width: 60%;
-    }
+    width: 60%;
 
     .banner {
         display: flex;
         flex-direction: row;
         min-width: 650px;
         margin-bottom: 50px;
+        align-items: center;
+        justify-content: center;
 
         img {
-            width: 95%;
+            width: 40%;
             border-radius: 15px;
+            margin: 0 10px;
         }
     }
     @media only screen and (max-width: 1000px) {
@@ -157,6 +188,7 @@ p {
             max-width: 400px;
 
             img {
+                width: 80%;
                 margin-bottom: 10px;
             }
         }
