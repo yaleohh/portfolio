@@ -60,7 +60,6 @@ p {
     flex-direction: column;
     align-items: center;
 }
-
 @media only screen and (max-width: 1000px) {
     .main-div {
         width: 80%;
@@ -135,6 +134,10 @@ p {
 }
 
 #school {
+    .main-div {
+        width: 60%;
+    }
+
     .banner {
         display: flex;
         flex-direction: row;
@@ -151,6 +154,7 @@ p {
             flex-direction: column;
             align-items: center;
             min-width: 300px;
+            max-width: 400px;
 
             img {
                 margin-bottom: 10px;
@@ -213,7 +217,8 @@ p {
 }
 
 #contact {
-  height: 100vh;
+    height: 100vh;
+
     img {
         width: 20px;
         vertical-align: -2px;

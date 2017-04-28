@@ -91,6 +91,8 @@ p {
   #projects {
     flex-direction: column;
     align-items: center; } }
+#school .main-div {
+  width: 60%; }
 #school .banner {
   display: flex;
   flex-direction: row;
@@ -103,7 +105,8 @@ p {
   #school .banner {
     flex-direction: column;
     align-items: center;
-    min-width: 300px; }
+    min-width: 300px;
+    max-width: 400px; }
     #school .banner img {
       margin-bottom: 10px; } }
 #school h1 {
