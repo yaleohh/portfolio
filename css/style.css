@@ -6,7 +6,7 @@ body {
   letter-spacing: 5px;
   margin: 5%;
   text-align: center;
-  overflow-y: hidden; }
+  min-width: 500px; }
 
 h1 {
   font-family: "Open Sans", Helvetica, sans-serif;
@@ -39,7 +39,7 @@ p {
   font-size: 14px; }
 
 .main-div {
-  width: 70%;
+  width: 60%;
   margin: auto;
   min-width: 450px; }
 
