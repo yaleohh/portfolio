@@ -39,7 +39,7 @@ p {
   font-size: 14px; }
 
 .main-div {
-  width: 60%;
+  width: 40%;
   margin: auto;
   min-width: 300px;
   display: flex;
@@ -94,7 +94,7 @@ p {
 #school .banner {
   display: flex;
   flex-direction: row;
-  min-width: 800px;
+  min-width: 650px;
   margin-bottom: 50px; }
   #school .banner img {
     width: 95%;
