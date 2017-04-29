@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
 Yale Ohh
-August 22, 2015
+April 2017
 -->
 <html>
 
@@ -73,11 +73,37 @@ August 22, 2015
 
     <!-- Contact -->
     <div id="contact" class="main-div">
-        <a id="contact-email" class="contact-info" href="mailto:hello@yaleohh.com?Subject=ISawYourPortfolio" target="_top"><img id="mail-icon" src="img/mail.png">HELLO@YALEOHH.COM</a>
+        <!-- <a id="contact-email" class="contact-info" href="mailto:hello@yaleohh.com?Subject=ISawYourPortfolio" target="_top"><img id="mail-icon" src="img/mail.png">HELLO@YALEOHH.COM</a> -->
+
+        <h2 id="contact-header">Looking forward to hearing from you!</h2>
+
+        <form action="https://formspree.io/yaleohh@gmail.com" method="POST">
+
+            <div class="input-field">
+
+                <input class="inputs" id="contact-name" type="text" name="name">
+                <label for="contact-name">Name</label>
+            </div>
+            <div class="input-field">
+
+                <input class="inputs" id="contact-email" type="text" name="reply-to">
+                <label for="contact-email">Email</label>
+            </div>
+            <div class="input-field">
+
+                <input class="inputs" id="contact-message" type="text" name="message">
+                <label for="contact-message">Message</label>
+            </div>
+            <div id="contact-send-button-container">
+                <input id="contact-send-button" type="submit" value="Send">
+            </div>
+        </form>
+
     </div>
-    <!-- scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- <script src="scripts/main.js"></script> -->
+
+    <footer>
+        <p id="copyright-text">YALE OHH © 2017 ALL RIGHTS RESERVED</p>
+    </footer>
 </body>
 
 </html>
