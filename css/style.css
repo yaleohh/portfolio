@@ -4,7 +4,7 @@ body {
   font-weight: 300;
   font-size: 12px;
   letter-spacing: 5px;
-  margin: 75px 0 0;
+  margin: 75px 0;
   text-align: center;
   min-width: 450px; }
 
@@ -46,7 +46,7 @@ p {
   flex-direction: column;
   align-items: center; }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 800px) {
   .main-div {
     width: 80%; } }
 #logo-top img {
@@ -108,7 +108,7 @@ p {
       display: flex;
       padding: 0; }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 800px) {
   #projects {
     flex-direction: column;
     align-items: center; } }
@@ -122,10 +122,10 @@ p {
     align-items: center;
     justify-content: center; }
     #school .banner img {
-      width: 400px;
+      width: 350px;
       border-radius: 15px;
       margin: 0 10px; }
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 800px) {
     #school .banner {
       flex-direction: column;
       align-items: center;
@@ -152,7 +152,7 @@ p {
       #school #school-awards .column img {
         width: 75px;
         margin: 0 0 20px; }
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 800px) {
     #school #school-awards {
       flex-direction: column;
       align-items: center; }
@@ -160,9 +160,12 @@ p {
       padding-bottom: 20px; } }
 
 #about .banner img {
-  width: 100%;
+  width: 650px;
   margin-bottom: 50px;
   border-radius: 15px; }
+@media only screen and (max-width: 800px) {
+  #about .banner img {
+    width: 100%; } }
 #about h1 {
   padding-bottom: 40px; }
 #about a {
@@ -185,8 +188,9 @@ p {
   #contact p {
     letter-spacing: 10px; }
   #contact form {
+    margin-top: 50px;
     width: 600px; }
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 800px) {
     #contact form {
       width: 100%; } }
   #contact .inputs {

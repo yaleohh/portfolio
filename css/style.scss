@@ -14,7 +14,7 @@ body {
     font-weight: 300;
     font-size: $small-font;
     letter-spacing: 5px;
-    margin: 75px 0 0;
+    margin: 75px 0;
     text-align: center;
     min-width: 450px;
     // overflow-y: hidden;
@@ -63,12 +63,11 @@ p {
     flex-direction: column;
     align-items: center;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 800px) {
     .main-div {
         width: 80%;
     }
 }
-
 // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ NAV @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 #logo-top {
     img {
@@ -106,7 +105,6 @@ p {
         }
     }
 }
-
 // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ PROJECTS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 #projects {
     display: flex;
@@ -158,13 +156,12 @@ p {
         }
     }
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 800px) {
     #projects {
         flex-direction: column;
         align-items: center;
     }
 }
-
 // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ SCHOOL @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 #school {
     width: 60%;
@@ -178,12 +175,12 @@ p {
         justify-content: center;
 
         img {
-            width: 400px;
+            width: 350px;
             border-radius: 15px;
             margin: 0 10px;
         }
     }
-    @media only screen and (max-width: 1000px) {
+    @media only screen and (max-width: 800px) {
         .banner {
             flex-direction: column;
             align-items: center;
@@ -224,7 +221,7 @@ p {
             }
         }
     }
-    @media only screen and (max-width: 1000px) {
+    @media only screen and (max-width: 800px) {
         #school-awards {
             flex-direction: column;
             align-items: center;
@@ -235,14 +232,20 @@ p {
         }
     }
 }
-
 // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ ABOUT @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 #about {
     .banner {
         img {
-            width: 100%;
+            width: 650px;
             margin-bottom: 50px;
             border-radius: 15px;
+        }
+    }
+    @media only screen and (max-width: 800px) {
+        .banner {
+            img {
+                width: 100%;
+            }
         }
     }
 
@@ -255,7 +258,6 @@ p {
         padding: 0;
     }
 }
-
 // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ CONTACT @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 #contact {
     #contact-header {
@@ -273,9 +275,10 @@ p {
     }
 
     form {
+        margin-top: 50px;
         width: 600px;
     }
-    @media only screen and (max-width: 1000px) {
+    @media only screen and (max-width: 800px) {
         form {
             width: 100%;
         }
@@ -362,8 +365,8 @@ p {
 }
 
 #copyright-text {
-  font-size: $small-font;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  margin-top: 100px;
+    font-size: $small-font;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-top: 100px;
 }
