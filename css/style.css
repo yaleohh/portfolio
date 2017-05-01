@@ -35,8 +35,8 @@ a:hover {
   color: #ee6e73; }
 
 p {
-  letter-spacing: 2px;
-  font-size: 17px; }
+  letter-spacing: 4px;
+  font-size: 12px; }
 
 .main-div {
   width: 40%;
@@ -142,9 +142,9 @@ p {
     align-items: flex-start;
     justify-content: center; }
     #school #school-awards p {
-      margin: 5px 0; }
+      margin: 5px 0;
+      text-transform: uppercase; }
     #school #school-awards .column {
-      padding: 0 10px;
       display: flex;
       flex-direction: column;
       align-items: center;

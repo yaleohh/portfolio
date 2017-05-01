@@ -51,8 +51,8 @@ a:hover {
 }
 
 p {
-    letter-spacing: 2px;
-    font-size: $medium-font;
+    letter-spacing: 4px;
+    font-size: $small-font;
 }
 
 .main-div {
@@ -206,10 +206,10 @@ p {
 
         p {
             margin: 5px 0;
+            text-transform: uppercase;
         }
 
         .column {
-            padding: 0 10px;
             display: flex;
             flex-direction: column;
             align-items: center;
