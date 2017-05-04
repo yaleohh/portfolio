@@ -48,31 +48,33 @@ April 2017
     <div id="nav">
         <nav class="nav">
             <ul>
-                <li class="nav-item">
-                    <a href="index.html" class="active">PROJECTS</a>
+                <li id="nav-projects" class="nav-item">
+                    <a class="active-nav">PROJECTS</a>
                 </li>
 
                 <!-- <li class="nav-item">
                     <a href="">WORK</a>
                 </li> -->
 
-                <li class="nav-item">
-                    <a href="school.html">SCHOOL</a>
+                <li id="nav-school" class="nav-item">
+                    <a>SCHOOL</a>
                 </li>
 
-                <li class="nav-item">
-                    <a href="about.html">ABOUT</a>
+                <li id="nav-about" class="nav-item">
+                    <a>ABOUT</a>
                 </li>
 
-                <li class="nav-item">
-                    <a href="contact.html">CONTACT</a>
+                <li id="nav-contact" class="nav-item">
+                    <a>CONTACT</a>
                 </li>
             </ul>
         </nav>
     </div>
 
-    <!-- Projects -->
-    <div id="projects" class="main-div">
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ PROJECTS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <div id="projects" class="main-div active-div">
         <div class="column">
             <div class="img-container">
                 <img src="img/projects/chubbyfish.png" alt="Chubby Fish" />
@@ -113,9 +115,95 @@ April 2017
         </div>
     </div>
 
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ SCHOOL @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <div id="school" class="main-div">
+
+        <div class="banner">
+            <img src="img/carleton.png" alt="Carleton Banner" />
+            <img src="img/algonquin.png" alt="Algonquin Banner" />
+        </div>
+
+        <h1>Bachelor of Information Technology</h1>
+
+        <div id="school-awards">
+            <div class="column">
+                <img src="img/medal2.gif" />
+                <p class="award-text">Francis C.C. Lynch Scholarship</p>
+                <p class="award-date-text">2012</p>
+            </div>
+            <div class="column">
+                <img src="img/medal2.gif" />
+                <p class="award-text">Henry Marshall Tory Scholarship</p>
+                <p class="award-date-text">2013</p>
+            </div>
+            <div class="column">
+                <img src="img/medal2.gif" />
+                <p class="award-text">Chalmers Jack Mackenzie Scholarship</p>
+                <p class="award-date-text">2015</p>
+            </div>
+            <div class="column">
+                <img src="img/medal2.gif" />
+                <p class="award-text">Michael Oliver Scholarship</p>
+                <p class="award-date-text">2016</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ ABOUT @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <div id="about" class="main-div">
+
+        <div class="banner">
+            <a href=""><img src="img/beach.jpg" alt="Beach Banner" /></a>
+            <h1> Yale Ohh </h1>
+            <p>Korean-Canadian logo & website designer living in Toronto. I am the co-owner and design lead of the notorious gaming organization Unicorn Inc.</p>
+            <p>In my spare time, I enjoy doodling, playing sports, and going on adventures.</p>
+            <p>I'm always looking for new projects, so please <a href="contact.html">contact me</a> if you'd like to collaborate.</p>
+        </div>
+    </div>
+
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ CONTACT @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <div id="contact" class="main-div">
+
+        <form action="https://formspree.io/yaleohh@gmail.com" method="POST">
+
+            <div class="input-field">
+
+                <input class="inputs" id="contact-name" type="text" name="name">
+                <label for="contact-name">Name</label>
+            </div>
+            <div class="input-field">
+
+                <input class="inputs" id="contact-email" type="text" name="reply-to">
+                <label for="contact-email">Email</label>
+            </div>
+            <div class="input-field">
+
+                <input class="inputs" id="contact-message" type="text" name="message">
+                <label for="contact-message">Message</label>
+            </div>
+            <div id="contact-send-button-container">
+                <input id="contact-send-button" type="submit" value="Send">
+            </div>
+        </form>
+
+    </div>
+
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ FOOTER @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
     <!-- <footer>
         <p id="copyright-text">YALE OHH © 2017 ALL RIGHTS RESERVED</p>
     </footer> -->
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>

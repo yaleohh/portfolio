@@ -1,17 +1,27 @@
-// Enter the following commands in cmd before editing
-// C:\Users\Yale>                                     cd "Google Drive\Websites\portfolio-v3\css"
-// C:\Users\Yale\Dropbox\Websites\portfolio-v3\css>      sass --watch style.scss:style.css
-$main-font: "Open Sans", Helvetica, sans-serif;
+// Enter the following commands in cmd inside of the portfolio folder
+//sass --watch css:css
+
+//colors
 $gray: #777;
 $red: #ee6e73;
+//font family
+$main-font: "Open Sans", Helvetica, sans-serif;
+//font sizes
 $small-font: 12px;
 $medium-font: 17px;
 $large-font: 25px;
+// font weights
+$normal-weight: 300;
+$thick-weight: 400;
+
+body {
+    width: calc(100vw - 34px);
+}
 
 body {
     font-family: $main-font;
     color: black;
-    font-weight: 300;
+    font-weight: $normal-weight;
     font-size: $small-font;
     letter-spacing: 5px;
     margin: 75px 0;
@@ -24,7 +34,7 @@ h1 {
     font-family: $main-font;
     font-size: $large-font;
     letter-spacing: 8px;
-    font-weight: 300;
+    font-weight: $normal-weight;
     color: black;
     text-transform: uppercase;
     margin: 0;
@@ -34,7 +44,7 @@ h2 {
     font-family: $main-font;
     font-size: $medium-font;
     letter-spacing: 5px;
-    font-weight: 300;
+    font-weight: $normal-weight;
     color: black;
     text-transform: uppercase;
     margin: 0;
@@ -51,17 +61,22 @@ a:hover {
 }
 
 p {
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     font-size: $small-font;
+    margin-top: 0;
 }
 
 .main-div {
     width: 40%;
     margin: auto;
     min-width: 300px;
-    display: flex;
     flex-direction: column;
     align-items: center;
+    display: none;
+}
+
+.active-div {
+  display: flex;
 }
 @media only screen and (max-width: 800px) {
     .main-div {
@@ -82,9 +97,9 @@ p {
         padding: 50px 0;
         text-align: center;
 
-        .active {
+        .active-nav {
             color: black;
-            font-weight: 400;
+            font-weight: $thick-weight;
         }
 
         a {
@@ -93,6 +108,7 @@ p {
         }
 
         a:hover {
+            cursor: pointer;
             color: $red;
         }
 
@@ -107,7 +123,6 @@ p {
 }
 // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ PROJECTS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 #projects {
-    display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
@@ -133,7 +148,7 @@ p {
             color: black;
             text-transform: uppercase;
             font-size: $medium-font;
-            font-weight: 300;
+            font-weight: $normal-weight;
         }
 
         .img-container:hover .img-overlay {
@@ -299,7 +314,7 @@ p {
         box-sizing: content-box;
         transition: all 0.3s;
         font-family: $main-font;
-        font-weight: 400;
+        font-weight: $thick-weight;
         font-size: $medium-font;
         color: black;
         letter-spacing: 5px;
@@ -319,7 +334,7 @@ p {
         margin: 0;
         padding: 0;
         font-family: $main-font;
-        font-weight: 300;
+        font-weight: $normal-weight;
         font-size: $small-font;
         color: $red;
         letter-spacing: 5px;

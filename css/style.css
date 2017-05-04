@@ -1,4 +1,7 @@
 body {
+  width: calc(100vw - 34px); }
+
+body {
   font-family: "Open Sans", Helvetica, sans-serif;
   color: black;
   font-weight: 300;
@@ -35,16 +38,20 @@ a:hover {
   color: #ee6e73; }
 
 p {
-  letter-spacing: 4px;
-  font-size: 12px; }
+  letter-spacing: 2px;
+  font-size: 12px;
+  margin-top: 0; }
 
 .main-div {
   width: 40%;
   margin: auto;
   min-width: 300px;
-  display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  display: none; }
+
+.active-div {
+  display: flex; }
 
 @media only screen and (max-width: 800px) {
   .main-div {
@@ -57,13 +64,14 @@ p {
   margin: 0;
   padding: 50px 0;
   text-align: center; }
-  #nav .nav .active {
+  #nav .nav .active-nav {
     color: black;
     font-weight: 400; }
   #nav .nav a {
     color: #777;
     margin: 0 2%; }
   #nav .nav a:hover {
+    cursor: pointer;
     color: #ee6e73; }
   #nav .nav ul {
     padding: 0; }
@@ -71,7 +79,6 @@ p {
     display: inline; }
 
 #projects {
-  display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: center; }
