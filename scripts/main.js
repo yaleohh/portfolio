@@ -7,6 +7,10 @@ $("#nav-projects").click(function() {
 $("#nav-school").click(function() {
     fadeOutActiveDiv();
     fadeInSchoolDiv();
+    $("#school-gpa-inner").css("width", "0");
+    $("#school-gpa-inner").animate({
+        width: "92%"
+    }, 1500);
 });
 
 $("#nav-about").click(function() {
