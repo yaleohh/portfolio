@@ -19,6 +19,11 @@ $("#nav-contact").click(function() {
     fadeInContactDiv();
 });
 
+$("#nav-contact2").click(function() {
+    fadeOutActiveDiv();
+    fadeInContactDiv();
+});
+
 // -------------------------  FUNCTIONS  -------------------------
 
 function fadeOutActiveDiv() {
