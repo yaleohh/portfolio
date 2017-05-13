@@ -14,9 +14,6 @@ $thick-weight: 400;
 
 body {
     width: calc(100vw - 34px);
-}
-
-body {
     font-family: $main-font;
     color: black;
     font-weight: $normal-weight;
@@ -24,6 +21,7 @@ body {
     letter-spacing: 5px;
     text-align: center;
     min-width: 450px;
+    margin: 75px 75px 75px 41px;
 }
 
 h1 {
@@ -95,8 +93,10 @@ p {
         text-align: center;
 
         .active-nav {
-            color: black;
-            font-weight: $thick-weight;
+            a {
+                color: $red;
+                font-weight: $thick-weight;
+            }
         }
 
         a {
@@ -247,9 +247,9 @@ p {
     }
 
     #gpa-div {
-      width: 500px;
-      margin-top: 50px;
-      text-align: center;
+        width: 500px;
+        margin-top: 50px;
+        text-align: center;
     }
 
     #school-gpa {
@@ -262,14 +262,11 @@ p {
         height: 30px;
         background-color: $yellow;
     }
-
     @media only screen and (max-width: 800px) {
-
         #gpa-div {
             width: 100%;
         }
     }
-
 }
 // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ ABOUT @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
@@ -296,6 +293,7 @@ p {
     a {
         color: $red;
         padding: 0;
+        cursor: pointer;
     }
 }
 // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ CONTACT @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@

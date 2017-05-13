@@ -1,14 +1,13 @@
 body {
-  width: calc(100vw - 34px); }
-
-body {
+  width: calc(100vw - 34px);
   font-family: "Open Sans", Helvetica, sans-serif;
   color: black;
   font-weight: 300;
   font-size: 12px;
   letter-spacing: 5px;
   text-align: center;
-  min-width: 450px; }
+  min-width: 450px;
+  margin: 75px 75px 75px 41px; }
 
 h1 {
   font-family: "Open Sans", Helvetica, sans-serif;
@@ -63,8 +62,8 @@ p {
   margin: 0;
   padding: 50px 0;
   text-align: center; }
-  #nav .nav .active-nav {
-    color: black;
+  #nav .nav .active-nav a {
+    color: #ee6e73;
     font-weight: 400; }
   #nav .nav a {
     color: #777;
@@ -190,7 +189,8 @@ p {
   padding-bottom: 40px; }
 #about a {
   color: #ee6e73;
-  padding: 0; }
+  padding: 0;
+  cursor: pointer; }
 
 #contact {
   /* label color */
