@@ -4,6 +4,11 @@ $("#nav-projects").click(function() {
     fadeInProjectsDiv();
 });
 
+$("#nav-work").click(function() {
+    fadeOutActiveDiv();
+    fadeInWorkDiv();
+});
+
 $("#nav-school").click(function() {
     fadeOutActiveDiv();
     fadeInSchoolDiv();
@@ -38,6 +43,11 @@ function fadeOutActiveDiv() {
 function fadeInProjectsDiv() {
     $("#nav-projects").addClass("active-nav");
     $("#projects").addClass("active-div");
+}
+
+function fadeInWorkDiv() {
+    $("#nav-work").addClass("active-nav");
+    $("#work").addClass("active-div");
 }
 
 function fadeInSchoolDiv() {
