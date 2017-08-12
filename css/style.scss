@@ -21,7 +21,7 @@ body {
     letter-spacing: 5px;
     text-align: center;
     min-width: 570px;
-    margin: 75px 75px 75px 20px;
+    margin-top: 50px;
 }
 
 h1 {
@@ -89,13 +89,12 @@ p {
     .nav {
         list-style: none;
         margin: 0;
-        padding: 50px 0;
+        padding: 30px 0;
         text-align: center;
 
         .active-nav {
             a {
                 color: $red;
-                font-weight: $thick-weight;
             }
         }
 
@@ -169,7 +168,7 @@ p {
         }
     }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
     #projects {
         flex-direction: column;
         align-items: center;
@@ -178,28 +177,33 @@ p {
 // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ WORK @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 #work {
-    width: 60%;
 
     .banner {
         display: flex;
-        flex-direction: row;
-        min-width: 650px;
+        flex-direction: column;
+        align-items: center;
+        // min-width: 300px;
+        // max-width: 400px;
+        // min-width: 650px;
         margin-bottom: 50px;
         align-items: center;
         justify-content: center;
+        width: 600px;
 
         img {
-            width: 350px;
+            width: 100%;
+            margin-bottom: 10px;
             border-radius: 15px;
-            margin: 0 10px;
         }
     }
-    @media only screen and (max-width: 1200px ) {
+
+    @media only screen and (max-width: 800px) {
         .banner {
             flex-direction: column;
             align-items: center;
-            min-width: 300px;
-            max-width: 400px;
+            // min-width: 300px;
+            // max-width: 400px;
+            width: 100%;
 
             img {
                 width: 100%;
@@ -207,7 +211,19 @@ p {
             }
         }
     }
-
+    // @media only screen and (max-width: 1200px ) {
+    //     .banner {
+    //         flex-direction: column;
+    //         align-items: center;
+    //         min-width: 300px;
+    //         max-width: 400px;
+    //
+    //         img {
+    //             width: 100%;
+    //             margin-bottom: 10px;
+    //         }
+    //     }
+    // }
     h1 {
         padding-bottom: 50px;
     }
@@ -215,28 +231,27 @@ p {
 // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ SCHOOL @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 #school {
-    width: 60%;
-
     .banner {
         display: flex;
         flex-direction: row;
-        min-width: 650px;
+        // min-width: 650px;
         margin-bottom: 50px;
         align-items: center;
         justify-content: center;
 
         img {
-            width: 350px;
+            width: 295px;
             border-radius: 15px;
-            margin: 0 10px;
+            margin: 0 5px;
         }
     }
     @media only screen and (max-width: 800px) {
         .banner {
             flex-direction: column;
             align-items: center;
-            min-width: 300px;
-            max-width: 400px;
+            // min-width: 300px;
+            // max-width: 400px;
+            width: 100%;
 
             img {
                 width: 100%;
@@ -264,10 +279,10 @@ p {
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 200px;
+            width: 160px;
 
             img {
-                width: 75px;
+                width: 80px;
                 margin: 0 0 20px;
             }
         }
@@ -310,13 +325,18 @@ p {
 #about {
     .banner {
         img {
-            width: 650px;
+            width: 600px;
             margin-bottom: 50px;
             border-radius: 15px;
+        }
+
+        p {
+            width: 600px;
         }
     }
     @media only screen and (max-width: 800px) {
         .banner {
+          width: 100%;
             img {
                 width: 100%;
             }
@@ -336,6 +356,32 @@ p {
 // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ CONTACT @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 #contact {
+    .banner {
+        display: flex;
+        flex-direction: row;
+        // min-width: 650px;
+        margin-bottom: 30px;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 600px;
+            border-radius: 15px;
+            margin: 0;
+            padding: 0;
+        }
+        @media only screen and (max-width: 800px) {
+            img {
+                width: 100%;
+            }
+        }
+    }
+    @media only screen and (max-width: 800px) {
+        .banner {
+            width: 100%;
+        }
+    }
+
     #contact-header {
         margin-bottom: 70px;
     }

@@ -7,7 +7,7 @@ body {
   letter-spacing: 5px;
   text-align: center;
   min-width: 570px;
-  margin: 75px 75px 75px 20px; }
+  margin-top: 50px; }
 
 h1 {
   font-family: "Open Sans", Helvetica, sans-serif;
@@ -60,11 +60,10 @@ p {
 #nav .nav {
   list-style: none;
   margin: 0;
-  padding: 50px 0;
+  padding: 30px 0;
   text-align: center; }
   #nav .nav .active-nav a {
-    color: #ee6e73;
-    font-weight: 400; }
+    color: #ee6e73; }
   #nav .nav a {
     color: #777;
     margin: 0 2%; }
@@ -113,103 +112,101 @@ p {
       display: flex;
       padding: 0; }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
   #projects {
     flex-direction: column;
     align-items: center; } }
-#work {
-  width: 60%; }
+#work .banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  align-items: center;
+  justify-content: center;
+  width: 600px; }
+  #work .banner img {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 15px; }
+@media only screen and (max-width: 800px) {
   #work .banner {
-    display: flex;
-    flex-direction: row;
-    min-width: 650px;
-    margin-bottom: 50px;
+    flex-direction: column;
     align-items: center;
-    justify-content: center; }
+    width: 100%; }
     #work .banner img {
-      width: 350px;
-      border-radius: 15px;
-      margin: 0 10px; }
-  @media only screen and (max-width: 1200px) {
-    #work .banner {
-      flex-direction: column;
-      align-items: center;
-      min-width: 300px;
-      max-width: 400px; }
-      #work .banner img {
-        width: 100%;
-        margin-bottom: 10px; } }
-  #work h1 {
-    padding-bottom: 50px; }
+      width: 100%;
+      margin-bottom: 10px; } }
+#work h1 {
+  padding-bottom: 50px; }
 
-#school {
-  width: 60%; }
+#school .banner {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+  align-items: center;
+  justify-content: center; }
+  #school .banner img {
+    width: 295px;
+    border-radius: 15px;
+    margin: 0 5px; }
+@media only screen and (max-width: 800px) {
   #school .banner {
-    display: flex;
-    flex-direction: row;
-    min-width: 650px;
-    margin-bottom: 50px;
+    flex-direction: column;
     align-items: center;
-    justify-content: center; }
+    width: 100%; }
     #school .banner img {
-      width: 350px;
-      border-radius: 15px;
-      margin: 0 10px; }
-  @media only screen and (max-width: 800px) {
-    #school .banner {
-      flex-direction: column;
-      align-items: center;
-      min-width: 300px;
-      max-width: 400px; }
-      #school .banner img {
-        width: 100%;
-        margin-bottom: 10px; } }
-  #school h1 {
-    padding-bottom: 50px; }
-  #school #school-awards {
+      width: 100%;
+      margin-bottom: 10px; } }
+#school h1 {
+  padding-bottom: 50px; }
+#school #school-awards {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center; }
+  #school #school-awards p {
+    margin: 5px 0;
+    text-transform: uppercase; }
+  #school #school-awards .column {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center; }
-    #school #school-awards p {
-      margin: 5px 0;
-      text-transform: uppercase; }
-    #school #school-awards .column {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 200px; }
-      #school #school-awards .column img {
-        width: 75px;
-        margin: 0 0 20px; }
-  @media only screen and (max-width: 800px) {
-    #school #school-awards {
-      flex-direction: column;
-      align-items: center; }
-    #school .award-date-text {
-      padding-bottom: 20px; } }
+    flex-direction: column;
+    align-items: center;
+    width: 160px; }
+    #school #school-awards .column img {
+      width: 80px;
+      margin: 0 0 20px; }
+@media only screen and (max-width: 800px) {
+  #school #school-awards {
+    flex-direction: column;
+    align-items: center; }
+  #school .award-date-text {
+    padding-bottom: 20px; } }
+#school #gpa-div {
+  width: 500px;
+  margin-top: 50px;
+  text-align: center; }
+#school #school-gpa {
+  background-color: #ccc;
+  margin-bottom: 10px; }
+#school #school-gpa-inner {
+  width: 0;
+  height: 30px;
+  background-color: #ffd789; }
+@media only screen and (max-width: 800px) {
   #school #gpa-div {
-    width: 500px;
-    margin-top: 50px;
-    text-align: center; }
-  #school #school-gpa {
-    background-color: #ccc;
-    margin-bottom: 10px; }
-  #school #school-gpa-inner {
-    width: 0;
-    height: 30px;
-    background-color: #ffd789; }
-  @media only screen and (max-width: 800px) {
-    #school #gpa-div {
-      width: 100%; } }
+    width: 100%; } }
 
 #about .banner img {
-  width: 650px;
+  width: 600px;
   margin-bottom: 50px;
   border-radius: 15px; }
+#about .banner p {
+  width: 600px; }
 @media only screen and (max-width: 800px) {
-  #about .banner img {
-    width: 100%; } }
+  #about .banner {
+    width: 100%; }
+    #about .banner img {
+      width: 100%; } }
 #about h1 {
   padding-bottom: 40px; }
 #about a {
@@ -224,6 +221,23 @@ p {
   /* valid color */
   /* invalid color */
   /* icon prefix focus color */ }
+  #contact .banner {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center; }
+    #contact .banner img {
+      width: 600px;
+      border-radius: 15px;
+      margin: 0;
+      padding: 0; }
+    @media only screen and (max-width: 800px) {
+      #contact .banner img {
+        width: 100%; } }
+  @media only screen and (max-width: 800px) {
+    #contact .banner {
+      width: 100%; } }
   #contact #contact-header {
     margin-bottom: 70px; }
   #contact img {
